@@ -143,6 +143,13 @@ Citations: LC = *Lesbian Connection*; page numbers are the printed page.
   or is buying the land. Ashfield Farm Women (LC Sept 1976, p. 14) were
   "squatting". Typed 2 with an explanation.
 
+- **One type per listing is a limit of the schema.** Many places were both a
+  community and a retreat (Lavender Hill, Heathcote, A Woman's Place, Laughing
+  Rock, Womanshare in 1986). `type_id` allows one value, so a choice is made
+  each time (self-description, first-named, or by function), and the other
+  role is recorded in `notes`. A many-to-many type table was considered and
+  not adopted.
+
 ## 3. How accepted groups are read
 
 - **Lesbians are implied in the questionnaire directories, but only when the
