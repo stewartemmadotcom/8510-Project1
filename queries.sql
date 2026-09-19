@@ -541,3 +541,101 @@ JOIN community_observations o  ON o.observation_id = a.observation_id
 WHERE o.notes NOT LIKE 'NOT WOMEN''S LAND%'
 GROUP BY a.focus_id, b.focus_id
 ORDER BY listings DESC, focus, appears_with;
+
+-- =====================================================================
+-- SQL TECHNIQUES USED IN THESE QUERIES (reference)
+-- =====================================================================
+--
+-- JOIN ... ON
+--   Attaches matching rows from another table using a shared ID, e.g. a
+--   community's name from `communities` or an issue's date from `sources`.
+--   Rows with no match are dropped. Used in nearly every query.
+--
+-- LEFT JOIN
+--   Like JOIN, but keeps rows that have no match, so something with zero
+--   matches still appears (as 0) instead of disappearing.
+--   Queries 3, 4, 8, 13, 14, 16, 17, 22, 23, 24, 25.
+--
+-- CROSS JOIN
+--   Pairs every row of one table with every row of another, making a full
+--   grid (e.g. every issue x every accepted group) before counting, so no
+--   combination is left out. Queries 4, 8, 22, 23.
+--
+-- Table aliases (o, s, c, t, ...)
+--   Short nicknames for tables: `community_observations o` lets o.acreage
+--   stand for community_observations.acreage.
+--
+-- WHERE
+--   Filters rows before anything is counted.
+--   notes NOT LIKE 'Not a listing%' drops closure, sale and letter rows;
+--   notes NOT LIKE 'NOT WOMEN''S LAND%' drops the flagged non-women's-land
+--   listings. In LIKE, % means "any text". A single quote inside SQL text is
+--   written twice ('') so it isn't read as the end of the text.
+--
+-- GROUP BY with aggregate functions
+--   Collapses rows into one row per group and summarizes each group:
+--   COUNT(*) counts rows; COUNT(column) counts only non-empty values;
+--   SUM, AVG, MIN, MAX; ROUND(x, 1) rounds to one decimal place.
+--   Queries 2-5, 7-9, 11-19, 21-26.
+--
+-- COUNT(DISTINCT column)
+--   Counts each different value once, e.g. communities rather than listings.
+--   Queries 3, 5, 9, 12, 17, 18, 21.
+--
+-- HAVING
+--   Like WHERE, but filters after grouping, e.g.
+--   HAVING COUNT(DISTINCT source_id) > 1 keeps only communities listed in
+--   more than one issue. Queries 3, 5, 9, 23, 24.
+--
+-- WITH name AS ( ... )   (a "common table expression", or CTE)
+--   Builds a named, temporary result that later steps can use, so a query
+--   can be written in stages (e.g. Query 1: typed -> in_order -> result).
+--   Queries 1, 2, 4, 6, 8, 10, 13, 14, 15, 22, 23, 25.
+--
+-- LAG(column) OVER (PARTITION BY ... ORDER BY ...)   (a window function)
+--   Looks back one row within a group. PARTITION BY community_id splits the
+--   rows by community; ORDER BY source_id puts each community's listings in
+--   date order; LAG then brings the previous listing's value onto the
+--   current row, so the two can be compared. WINDOW w AS (...) names that
+--   setup once so several LAG()s can share it. Queries 1, 2, 6, 10.
+--
+-- GROUP_CONCAT(value, separator ORDER BY ...)
+--   Joins many rows' values into one line of text, in order, e.g.
+--   "1976: 145.0  ->  1983: 147.0  ->  1986: 150.0". Queries 3, 5, 9.
+--
+-- CASE WHEN ... THEN ... ELSE ... END
+--   An if/then inside a query: labelling untyped rows (3), grouping years
+--   into periods (12), sorting land vs. mail into categories (19), and
+--   labelling results (2, 25).
+--
+-- COALESCE(a, b)
+--   Uses a, or b if a is empty, e.g. printing "?" or "(not stated)" in
+--   place of a missing value. Queries 3, 5, 9, 12, 13, 18, 20, 25.
+--
+-- Text joined with ||
+--   Glues text together, e.g. year || ' ' || month -> "1986 March/April".
+--
+-- Percentages: ROUND(100.0 * part / whole, 1)
+--   Writing 100.0 rather than 100 makes SQLite use decimal division;
+--   otherwise whole-number division would round results down.
+--   Queries 4, 8, 13, 15, 16, 17, 19, 22, 23, 25.
+--
+-- Counting true/false: SUM(condition), MAX(condition)
+--   In SQLite a comparison is 1 when true and 0 when false, so
+--   SUM(num_residents = 0) counts listings with zero residents, and
+--   MAX(group_id = 4) is 1 if any row for a listing welcomes boy children.
+--   Queries 7, 13, 14, 15, 25.
+--
+-- Subqueries
+--   A small query inside another. (SELECT COUNT(*) FROM ...) supplies one
+--   number, such as the denominator for a percentage; IN (SELECT ...) tests
+--   membership in a list; EXISTS (SELECT ...) asks whether at least one
+--   matching row exists. Queries 15, 16, 17, 19, 24, 25.
+--
+-- Self-join
+--   Joins a table to itself. Query 26 matches observation_focuses against
+--   itself to find two focuses on the same listing; b.focus_id > a.focus_id
+--   counts each pair once rather than twice.
+--
+-- Counting words: LENGTH(text) - LENGTH(REPLACE(text, ' ', '')) + 1
+--   Counts the spaces in a text and adds one. Query 15.
