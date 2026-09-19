@@ -74,6 +74,14 @@ Citations: LC = *Lesbian Connection*; page numbers are the printed page.
 - **Land one woman bought and hosts is type 3.** Nourishing Space for Women
   (LC Sept 1976, p. 14): "a woman has bought" it "to be used by any woman
   interested."
+- **Two women on their own land are type 3, unless they are recruiting a
+  community.**
+  - Type 3: couples hosting visitors or apprentices. Feathers Farm (LC Dec
+    1982), Adlai Neubauer & Karen Hamm (LC Dec 1982), Misty Bottoms Farm (LC
+    Mar/Apr 1983).
+  - Type 2: two women recruiting "Feminist pioneers... to begin women's rural
+    community" (Susan B Anthony Memorial Unrest Home).
+  - The line is whether the listing is looking for members.
 - **Land owned collectively by a wider community is type 2, not 3.** Elwha River
   land (LC Sept 1976, p. 14) was "owned by the gay community of Seattle".
 - **Type 4 by function, not only by name.** A vacation ranch "for lesbians
@@ -88,6 +96,14 @@ Citations: LC = *Lesbian Connection*; page numbers are the printed page.
   Dec 1982, p. 23) calls itself "a thriving womyn's community and retreat" and
   seeks "permanent members", so it is type 2, not 4. This refines the retreat
   rule for places that call themselves both.
+- **Type 3 includes private ownership in progress.**
+  - Feathers Farm's 1983 letter says "we don't own Feathers Farm, at least
+    not yet". Its 1982 listing had been typed 3.
+  - Options considered: retype the 1982 row to 5 (Land Fund), or keep 3.
+  - Decision: keep 3. They were in the process of obtaining the land
+    privately, and no other type fits.
+  - The letter is its own observation, and the 1982 row's `notes` point to
+    it. Later evidence adds rows; it doesn't rewrite earlier ones.
 - **A squat fits none of the types.** Every type assumes the group owns, rents
   or is buying the land. Ashfield Farm Women (LC Sept 1976, p. 14) were
   "squatting". Typed 2 with an explanation.
@@ -172,6 +188,17 @@ Citations: LC = *Lesbian Connection*; page numbers are the printed page.
     community is now "Elwha River land", after the river on the property.
 - **Other names come only from the listing itself.** Examples: OWLT, SSS, Cave
   Canyon Ranch, Sisters of Diana, Inc.
+- **Two listings can be one community.**
+  - In LC Mar/Apr 1983 (p. 19), OWL FARM ("two wimmin caretaking OWL") and
+    OREGON WOMEN'S LAND TRUST ("in the process of buying OWL FARM") are
+    printed separately.
+  - They are recorded as two observations of one community (OWLT, community
+    1), matching how Wisconsin Womyn's Land Co-op and its DOE Farm were
+    handled.
+  - This connects OWLT's 1976 listing ("has bought 145 acres") to its 1983
+    state ("in the process of buying" 147 acres; "Inactive group with hopes
+    to revive").
+  - The old data had Owl Farm and OWLT as separate communities.
 - **One paragraph can hold two communities.** LAND TRUSTS FOR WOMEN (LC Sept
   1976, p. 13) names two separate trusts, so it became two observations.
 - **Verbatim text is read from the page image, not the OCR.** Typos in the
@@ -218,6 +245,25 @@ LC Dec 1982: **28 listings** (plus 2 "folded" mentions).
 - **Groups without land included:** Pagoda, Ellie's Nest, River Most Wild,
   Aradia, Women's Wilderness Experience. All are now excluded.
 
+LC Mar/Apr 1983: **12 listings** (Owl Farm and OWLT count as two), plus the
+Ozark end-of-land mention and the Feathers Farm letter.
+
+- **Type changed:** 6 of 12. Rowdybush Farm (4→2), Earth Current Farm (3→2),
+  Cedar (5→2), Fly Away Home (3→2), Rootworks (4→3), Owl Farm (2→1).
+- **Names not in the listing:**
+  - "Laughing Rock Farm/Wise Woman Center" (Rowdybush Farm) and "Earth
+    Current Womens Hermitage" (Earth Current Farm), probably from later
+    issues.
+  - Spellings run together: "Mistybottoms", "Flyaway Home",
+    "Steppingwoods".
+- **Residents:** Northwoods stored the middle of "6-10" (8), now the
+  minimum (6). Earth Current Farm counted all 6 members, but the listing says
+  "4 on the land".
+- **Owl Farm and OWLT were split** into two communities, with OWLT's 1976
+  row unconnected to its land.
+- **Groups without land included:** Gabriel's, Sea Gnomes Home.
+- **Month:** the old row had "March"; the cover says "March/April 1983".
+
 ## 7. Excluded listings
 
 LC Dec 1982, under the editor's note "These groups don't have land, per se,
@@ -234,3 +280,13 @@ but we wanted to include them for your information" (pp. 24–25):
 - Lesbians on Land (Joyce Cheney, Burlington, VT): a call for stories of
   lesbian lands for a book (probably Cheney's later *Lesbian Land*; verify
   before citing)
+
+LC Mar/Apr 1983, under the editors' note "These groups don't have land,
+perse, but we decided to include them for your information" (p. 19):
+
+- Gabriel's (Provincetown, MA): a women's guesthouse
+- Sea Gnomes Home (Stonington, ME): a womyn's rooming/guest house
+
+Printed under the same note, but *included*: Ozark Wimmin's Land Trust. It
+had land, and the land was dissolved ("The pieces of land wound up in legal
+dissolution eventually"). It is recorded as an end-of-land mention.

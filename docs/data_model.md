@@ -149,13 +149,18 @@ New focuses are added only when a listing needs one.
 
 ### Scope: what counts as a listing
 - Included: every listing in LC's land directories that describes land, plus
-  mentions of a community's end (e.g. "A Woman's Place... [has] folded"),
-  recorded with no type and `notes` beginning "Not a listing".
+  two kinds of "Not a listing" row, which have no type and `notes` beginning
+  "Not a listing":
+  - mentions of a community's end: "A Woman's Place... [has] folded"; Ozark
+    Wimmin's Land Trust, whose land "wound up in legal dissolution"
+  - letters from a listed community that add to or correct its listing, such
+    as Feathers Farm's 1983 letter
+  Letters that name no community are not recorded.
 - Excluded: groups without land, even when LC printed them. In Dec 1982 these
   were the groups under the editor's note "These groups don't have land, per
   se": The Pagoda Community, Ellie's Nest, River Most Wild, Aradia Inc Marie
   Curie Task Force, Women's Wilderness Experience, and Lesbians on Land (Joyce
-  Cheney's call for stories).
+  Cheney's call for stories). In Mar/Apr 1983: Gabriel's and Sea Gnomes Home.
 - Included but flagged: land groups LC says are "not women's land groups, but
   they do welcome lesbians" (Oakynwomyn/Twin Oaks, Far Away Farm). Their
   `notes` begin "NOT WOMEN'S LAND" so queries can leave them out.
@@ -206,6 +211,12 @@ New focuses are added only when a listing needs one.
   and `communities.notes` explains where the name came from.
 - Fields are filled only from sources in this database, and are updated as new
   issues are added.
+- An organization and the land it owns or is buying are one community, even
+  when LC prints them as separate listings. Each listing is its own
+  observation of that community, and the land's name goes in
+  `alternate_names`. Examples: Wisconsin Womyn's Land Co-op and DOE Farm;
+  Oregon Women's Land Trust and Owl Farm (LC Mar/Apr 1983, two listings, both
+  community 1).
 
 ### Type
 - Every type is a judgment, and each observation's `notes` explains it.
@@ -220,7 +231,16 @@ New focuses are added only when a listing needs one.
 - A place defined by what it offers visitors is type 4 by function, even
   without the word "retreat": a vacation ranch (North Crow) or an educational
   center (Who Farm Inc, Penthesileia, Inc).
-- Land a listing says one woman bought and hosts is type 3.
+- Land a listing says one woman bought and hosts is type 3. Type 3 also covers
+  land that women live on and are in the process of acquiring privately
+  (Feathers Farm: "we don't own Feathers Farm, at least not yet").
+- A type is not revised when a later source corrects a detail. The later
+  source becomes its own observation, and the earlier row's `notes` point to
+  it.
+- One or two women living on their land are type 3 (Feathers Farm, Adlai
+  Neubauer & Karen Hamm, Misty Bottoms Farm), unless the listing recruits
+  members to build a community, in which case it is type 2 (Susan B Anthony
+  Memorial Unrest Home).
 - None of the types fits a squat; the one squat so far (Ashfield Farm Women) is
   typed 2 with an explanation.
 
