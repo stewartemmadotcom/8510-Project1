@@ -141,7 +141,7 @@ record.
 | 8 | Workshops/education | Runs workshops, classes, or skill-sharing |
 | 9 | Archives/cultural work | Houses archives, presses, arts, or cultural production |
 | 10 | Environmentalism/eco-friendly | Chemical-free land, or another explicit environmental practice, as a rule or purpose of the place |
-| 11 | Women of color/racial diversity | Centers women of color, or names racial diversity or third world women as a stated aim or policy |
+| 11 | Women of color | Explicitly invites, recruits, or centers women of color. Statements of inclusiveness ("all women of all colours") or anti-racism ("non-racist", "strive to eliminate... racism") are recorded in `notes`, not coded. |
 
 New focuses are added only when a listing needs one.
 
@@ -156,6 +156,17 @@ New focuses are added only when a listing needs one.
   - letters from a listed community that add to or correct its listing, such
     as Feathers Farm's 1983 letter
   Letters that name no community are not recorded.
+- Classified ads: an ad is recorded as an observation only when it describes
+  land and that place is not already in the same issue's directory. `notes`
+  begin "From a classified ad". Ads for businesses or events run by a known
+  community (raft tours, healing intensives) are noted on that community in
+  `communities.notes`, not recorded as observations. Ads for rental cottages,
+  or for groups with no land, are excluded, as in the directories.
+- A directory listing that supplements an earlier one ("This is additional
+  info to our listing in VI,2", Northwoods, LC June/July 1983) is a regular
+  observation, typed and coded from its own text. `notes` begin "Addendum
+  to its LC [issue] listing", and any figure that differs from the earlier
+  listing is noted rather than reconciled.
 - Excluded: groups without land, even when LC printed them. In Dec 1982 these
   were the groups under the editor's note "These groups don't have land, per
   se": The Pagoda Community, Ellie's Nest, River Most Wild, Aradia Inc Marie
@@ -211,6 +222,13 @@ New focuses are added only when a listing needs one.
   and `communities.notes` explains where the name came from.
 - Fields are filled only from sources in this database, and are updated as new
   issues are added.
+- When a source reports that a community closed (folded, sold, or land
+  dissolved), `communities.notes` begins with `CLOSED:` and the closing date
+  as closely as the source allows ("late 1981 to late 1982", "about May 1983", "by March
+  1983"), then how it closed and which observation reports it. Dates worked
+  out from the issue ("sold last month" in June/July 1983 = about May 1983)
+  are marked "about"; dates known only as a deadline are marked "by". Queries can find them with
+  `WHERE notes LIKE 'CLOSED:%'`. Inactive groups are not marked closed.
 - An organization and the land it owns or is buying are one community, even
   when LC prints them as separate listings. Each listing is its own
   observation of that community, and the land's name goes in
@@ -224,6 +242,9 @@ New focuses are added only when a listing needs one.
   the land is not paid off. An unpaid mortgage alone does not make it a land fund.
 - A group not yet on land, still negotiating, or with no land mentioned is
   type 5.
+- Land a listing says is held "in a land trust" is type 1, whatever else the
+  listing calls itself (Heathcote Womens Community, "a new wom'ns
+  community/retreat center" with "35 acres... in a land trust").
 - A place that calls itself a retreat is type 4, even if people live there; its
   residents are still counted in `num_residents`. If it calls itself both a
   community and a retreat, the type follows the one it names first (Lavender
@@ -279,6 +300,11 @@ New focuses are added only when a listing needs one.
 - "Women" or "all women" means Lesbian women + Non-lesbian women.
 - "Children", or children mentioned without a gender, means Girl children +
   Boy children.
+- People who are members of the land community are coded as accepted even
+  when the welcome list leaves them out (Folly Farm: "women and men living and
+  working on the land", though "males" is not on its welcome list). People
+  who are on the land but are not members are not coded: tenants (Generous
+  Earth's "hets") and visiting friends (Stepping Woods' "male friends").
 - "Males" or "men" with no orientation given means Gay men + Non-gay men, with
   any conditions noted (Adlai Neubauer & Karen Hamm: "non oppressive males
   (not overnight)"). In the 1982 questionnaire directory, males are *not*

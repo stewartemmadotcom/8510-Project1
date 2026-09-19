@@ -49,7 +49,33 @@ Citations: LC = *Lesbian Connection*; page numbers are the printed page.
     and gives lower fees to "working class/older/third world women". It was
     the first listing to mention race, and the vocabulary had no way to record
     it.
+  - **Narrowed focus 11 to "Women of color": explicit invitation or
+    recruitment only.**
+    - Prompted by Arlene & Arline (LC June/July 1983), who asked that
+      visitors be "non-racist, non-classist etc".
+    - The broad definition had been coding every statement of inclusiveness
+      or anti-racism, which says little about whether a community sought out
+      women of color.
+    - Removed: Who Farm Inc ("womyn of all ages, races, cultures and
+      backgrounds"), Twin Oaks ("strive to eliminate... racism"), and
+      Heathcote ("all women of all colours and persuasions").
+    - Kept: Owl Farm ("I encourage wimmin of color to come and be here"), and
+      Lavender Hill, whose fee exception for "third world women" is a policy
+      aimed at drawing women of color to the land.
+    - Went from 5 codes to 2. The wording of the removed three is kept in
+      `notes`.
   - This gives the database a second many-to-many relationship.
+- **Classified ads now count, under a narrow rule.**
+  - An ad becomes an observation only if it describes land (or is a land
+    community advertising itself) and that place isn't in the same issue's
+    directory.
+  - Ads for a known community's events or businesses (raft tours, healing
+    intensives, North Crow's "Jubilezzie's") are noted on the community.
+  - Added so far: Wisconsin Womyn's Land (June/July 1983), Kringle/Wood's
+    210-acre dairy farm (June/July 1983), and Susan B Anthony Memorial Unrest
+    Home's "FEMINIST PIONEERS" ad (Mar/Apr 1983).
+  - All four issues so far were checked, so ads are counted the same way in
+    every year.
 - **Dropped "NA" from `accepted_groups`.** A listing that names no one now has no
   junction rows. "NA" had counted as a group and inflated the totals.
 
@@ -131,6 +157,12 @@ Citations: LC = *Lesbian Connection*; page numbers are the printed page.
   says only "women". Coded as lesbian and non-lesbian women, with a note. The
   LC editor's introduction to the 1976 directory says some groups "do not
   mention lesbians".
+- **Members count as accepted, even when the welcome list leaves them out.**
+  - Folly Farm (LC June/July 1983, p. 24) lists "women and men living and
+    working on the land", but "males" isn't on its welcome list. The men are
+    coded, because they are members.
+  - The same line as for residents: members count; tenants (Generous Earth's
+    "hets") and visiting friends (Stepping Woods' "male friends") do not.
 - **Gay men appear as co-residents,** not just as visitors. On the Elwha River
   land the property was shared with gay men, and "the men here would rather
   turn the total 78 over to the dykes."
@@ -264,6 +296,19 @@ Ozark end-of-land mention and the Feathers Farm letter.
 - **Groups without land included:** Gabriel's, Sea Gnomes Home.
 - **Month:** the old row had "March"; the cover says "March/April 1983".
 
+LC June/July 1983: **14 directory listings** (including the Northwoods
+addendum), plus the Lavender Hill sale and two classified-ad observations.
+
+- **Type changed:** 4. Northwoods (4→2), Heathcote (2→1, "in a land trust"),
+  Moon Ridge (3→2), D W Outpost (5→2).
+- **Names from later issues:** "Dutch Mountain" (Reggie Odom & Eileen
+  Kennedy's land), "Gathering Ground" (Linda Tisdale/Carol Shoreborn's land),
+  and probably "Greenstalk" for the listing headed "WE DON'T HAVE A NAME YET".
+  Spellings run together: "Moonridge", "D.W. Outpost".
+- **Residents:** Reggie & Eileen counted as 2, though they were "currently
+  living in city".
+- **Included a rental cabin** (Pepperland); **missed** the ads.
+
 ## 7. Excluded listings
 
 LC Dec 1982, under the editor's note "These groups don't have land, per se,
@@ -286,6 +331,22 @@ perse, but we decided to include them for your information" (p. 19):
 
 - Gabriel's (Provincetown, MA): a women's guesthouse
 - Sea Gnomes Home (Stonington, ME): a womyn's rooming/guest house
+
+LC June/July 1983, under "These groups don't have land, per se, or they
+aren't exactly land groups" (p. 24):
+
+- Pepperland (Albion, CA): a single rental cabin on 2 acres
+- (Wilderness Way, under the same note, was *included*: it's a women's
+  campground on its own 10 acres, like North Crow Vacation Ranch.)
+
+Classified ads excluded (all issues checked):
+
+- Dec 1982: "TWO WOMEN (30,35)... seeking to JOIN or FORM" women's land (no
+  land); "45-105 ACRES SOUTH VERMONT: Sell, lease, trade for West Coast
+  property, may donate part for women's use" (property for sale, not a group)
+- June/July 1983: "SEPARATISTS: wanting to form a lesbian country
+  community" (no land); "VACATION: at a chemical free lake cottage in
+  Wisconsin" (rental cottage); "LESBIAN SELF-SUFFICIENCY WEEKENDS" (no land)
 
 Printed under the same note, but *included*: Ozark Wimmin's Land Trust. It
 had land, and the land was dissolved ("The pieces of land wound up in legal
