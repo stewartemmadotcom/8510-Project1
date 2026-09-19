@@ -1,0 +1,6 @@
+type_id,type_name,description
+1,Land Trust,"Land held collectively/legally by a trust rather than an individual owner, often with the goal of permanent protection"
+2,Intentional Community/Cooperative,"A residential community organized around shared values, goals, ownership, labor, or decision-making. Merged from two originally separate categories (Intentional Community, Cooperative/Collective) since in practice the distinction between organizing around shared values versus shared ownership/labor did not hold up consistently across how listings described themselves."
+3,Private/Individual Land,"Land owned and hosted by one person or family, sometimes open to visitors/guests"
+4,Retreat/Gathering Space,"Land used primarily for gatherings, retreats, or events rather than year-round residency"
+5,Land Fund/Seeking Land,"Group organizing or fundraising to acquire land, not yet an established community"
