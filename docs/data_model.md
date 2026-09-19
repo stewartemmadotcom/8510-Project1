@@ -169,9 +169,12 @@ New focuses are added only when a listing needs one.
   listing is noted rather than reconciled.
 - Excluded: groups without land, even when LC printed them. In Dec 1982 these
   were the groups under the editor's note "These groups don't have land, per
-  se": The Pagoda Community, Ellie's Nest, River Most Wild, Aradia Inc Marie
+  se": Ellie's Nest, River Most Wild, Aradia Inc Marie
   Curie Task Force, Women's Wilderness Experience, and Lesbians on Land (Joyce
   Cheney's call for stories). In Mar/Apr 1983: Gabriel's and Sea Gnomes Home.
+- Lesbian residential communities on their own property are included even
+  without acreage (Pagoda, first listed in Dec 1982 under "don't have land,
+  per se").
 - Included but flagged: land groups LC says are "not women's land groups, but
   they do welcome lesbians" (Oakynwomyn/Twin Oaks, Far Away Farm). Their
   `notes` begin "NOT WOMEN'S LAND" so queries can leave them out.
@@ -255,13 +258,28 @@ New focuses are added only when a listing needs one.
 - Land a listing says one woman bought and hosts is type 3. Type 3 also covers
   land that women live on and are in the process of acquiring privately
   (Feathers Farm: "we don't own Feathers Farm, at least not yet").
+- A bare listing (only the "We have/are" form, no description) is left
+  untyped rather than typed by default, so that a shorter listing does not
+  look like a change in the community (The Web, LC Mar/Apr 1986). Blank types
+  therefore include both "Not a listing" rows and bare listings; `notes`
+  says which.
 - A type is not revised when a later source corrects a detail. The later
   source becomes its own observation, and the earlier row's `notes` point to
   it.
 - One or two women living on their land are type 3 (Feathers Farm, Adlai
   Neubauer & Karen Hamm, Misty Bottoms Farm), unless the listing recruits
   members to build a community, in which case it is type 2 (Susan B Anthony
-  Memorial Unrest Home).
+  Memorial Unrest Home, Cedar). Recruiting makes it type 2 only when the
+  women already live on the land. An owner who does not live there yet stays
+  type 3 even when welcoming new members (Duffy Z Baum's land, Dutch
+  Mountain).
+- When a community with a person-name fallback later appears under a real
+  name, the community is renamed and the fallback moves to
+  `alternate_names` (Reggie Odom & Eileen Kennedy's land → Dutch Mountain).
+  The same applies when a community renames itself: the latest name becomes
+  `name` and earlier names move to `alternate_names` (Rowdybush Farm →
+  Laughing Rock Farm). Each observation's `raw_text` keeps the name used at
+  that date.
 - None of the types fits a squat; the one squat so far (Ashfield Farm Women) is
   typed 2 with an explanation.
 
@@ -289,6 +307,10 @@ New focuses are added only when a listing needs one.
   goes in `notes`.
 - If a range is given, the smaller number is stored and the range noted.
   Founders are not counted as current residents.
+- Part-time family members are noted but not counted, and are not coded as
+  accepted groups (Deer Song: "my two college age sons are part-time
+  dwellers"). Members who are the whole community but live there part-time
+  are counted, with "part-time" in `notes` (The Web, 1986).
 - A count taken from an earlier date (e.g. a visitor's account of the previous
   summer) is kept, and the date noted.
 
@@ -297,7 +319,13 @@ New focuses are added only when a listing needs one.
   "We welcome:" list because the whole directory is for lesbians. So Lesbian
   women is coded for every listing that welcomes anyone. A listing that names
   no one (Susan Stone: "I welcome: letters", seeking "people") gets no rows.
-- "Women" or "all women" means Lesbian women + Non-lesbian women.
+- LC's 1986 directory changes the default: "If the groups are open to
+  nonlesbians or dogs it will specifically say so in their listing - if
+  nothing's mentioned you can assume they are not welcome." From 1986 on,
+  Non-lesbian women are coded only when a listing names them, and general
+  words like "women" or "wimmin" are read as lesbians.
+- "Women" or "all women" means Lesbian women + Non-lesbian women (in
+  directories before 1986).
 - "Children", or children mentioned without a gender, means Girl children +
   Boy children.
 - People who are members of the land community are coded as accepted even

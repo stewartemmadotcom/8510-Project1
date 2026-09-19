@@ -72,10 +72,11 @@ Citations: LC = *Lesbian Connection*; page numbers are the printed page.
   - Ads for a known community's events or businesses (raft tours, healing
     intensives, North Crow's "Jubilezzie's") are noted on the community.
   - Added so far: Wisconsin Womyn's Land (June/July 1983), Kringle/Wood's
-    210-acre dairy farm (June/July 1983), and Susan B Anthony Memorial Unrest
-    Home's "FEMINIST PIONEERS" ad (Mar/Apr 1983).
-  - All four issues so far were checked, so ads are counted the same way in
-    every year.
+    210-acre dairy farm (June/July 1983), Susan B Anthony Memorial Unrest
+    Home's "FEMINIST PIONEERS" ad (Mar/Apr 1983), "240 acres near
+    Fayetteville, AR" and the Women Only Ranch (Mar/Apr 1986).
+  - The ads in every issue so far were checked, so ads are counted the same
+    way in every year.
 - **Dropped "NA" from `accepted_groups`.** A listing that names no one now has no
   junction rows. "NA" had counted as a group and inflated the totals.
 
@@ -108,6 +109,14 @@ Citations: LC = *Lesbian Connection*; page numbers are the printed page.
   - Type 2: two women recruiting "Feminist pioneers... to begin women's rural
     community" (Susan B Anthony Memorial Unrest Home).
   - The line is whether the listing is looking for members.
+  - Sharpened in 1986: recruiting makes it type 2 only when the women
+    already live on the land. An owner not yet living there stays type 3 even
+    when welcoming new members (Duffy Z Baum 1982; Dutch Mountain 1986).
+    Applied this way, one woman living on her land who welcomes "new
+    members/residents" is type 2 (Chris of Coventree, Deer Song).
+- **A bare listing stays untyped.** The Web's 1986 listing is only the "We
+  have/are" form. Typing it by default would make a shorter listing look
+  like a change in the community, so its type is left blank.
 - **Land owned collectively by a wider community is type 2, not 3.** Elwha River
   land (LC Sept 1976, p. 14) was "owned by the gay community of Seattle".
 - **Type 4 by function, not only by name.** A vacation ranch "for lesbians
@@ -274,8 +283,10 @@ LC Dec 1982: **28 listings** (plus 2 "folded" mentions).
 - **Men coded as "NA"** instead of gay/non-gay men: Adlai & Karen, Jan F Walsh,
   Twin Oaks, Far Away Farm.
 - **Children missing:** Feathers Farm ("women and children").
-- **Groups without land included:** Pagoda, Ellie's Nest, River Most Wild,
-  Aradia, Women's Wilderness Experience. All are now excluded.
+- **Groups without land included:** Ellie's Nest, River Most Wild, Aradia,
+  Women's Wilderness Experience. All are now excluded. (The old data also
+  included Pagoda, which is now included again, as a lesbian residential
+  community.)
 
 LC Mar/Apr 1983: **12 listings** (Owl Farm and OWLT count as two), plus the
 Ozark end-of-land mention and the Feathers Farm letter.
@@ -309,13 +320,30 @@ addendum), plus the Lavender Hill sale and two classified-ad observations.
   living in city".
 - **Included a rental cabin** (Pepperland); **missed** the ads.
 
+LC Mar/Apr 1986: **29 directory listings** (one bare listing left untyped),
+plus two classified-ad observations. 25 communities now appear in more than
+one issue.
+
+- **Type changed:** 10. Feathers Farm (4→2), Chris of Coventree (3→2), Deer
+  Song (3→2), Laughing Rock (4→2), Herland (3→2), Susan B Anthony (3→2), Maple
+  Row (3→2), The Web (3→untyped), Penthesileia (3→2), Rootworks (3→2). Most
+  follow the rule that women living on the land who recruit members are
+  type 2.
+- **Members counted as residents:** Spiral (33 members → blank, since
+  "Supportive Membership" does not involve living there); Silver Circle
+  (4 → 2, "two wimmin living on the land and two... in different cities").
+- **Names from other issues applied backward:** "Herland", "Dutch Mountain",
+  "Gathering Ground", "Greenstalk", "Laughing Rock Farm", "Earth Current
+  Womens Hermitage" and "Spiral Wimmin's Land Trust" were used for earlier
+  listings that didn't have them. Now each observation keeps its own name in
+  `raw_text`, and the community takes the latest name.
+- **Guest houses without land included:** Sea Gnomes' Home, Half Moon Pines.
+
 ## 7. Excluded listings
 
 LC Dec 1982, under the editor's note "These groups don't have land, per se,
 but we wanted to include them for your information" (pp. 24–25):
 
-- The Pagoda Community (St Augustine, FL): a residential community with
-  cottages for lease
 - Ellie's Nest (Key West, FL): a guest house "for and by women"
 - River Most Wild (Ridge Manor, FL): one woman's house with guest rooms
 - Aradia Inc Marie Curie Task Force (Grand Rapids, MI): members own land "as
@@ -347,6 +375,26 @@ Classified ads excluded (all issues checked):
 - June/July 1983: "SEPARATISTS: wanting to form a lesbian country
   community" (no land); "VACATION: at a chemical free lake cottage in
   Wisconsin" (rental cottage); "LESBIAN SELF-SUFFICIENCY WEEKENDS" (no land)
+
+Also *included* after reconsideration: The Pagoda Community (Dec 1982), first
+excluded under the "don't have land, per se" note. It was reconsidered when it
+reappeared in 1986 as "a small lesbian residential community" where "Only
+lesbians can rent or own". It is now recorded in both years.
+
+LC Mar/Apr 1986, in the "GUEST HOUSES/RETREATS/ETC" section (p. 11):
+
+- Sea Gnomes' Home (Stonington, ME): "Womyn's Guest House offering 3 rooms"
+- Half Moon Pines (Hamburg, PA): "Vacation cabin in the Blue Mountains"
+- (Laurel Ridge, Labrys and River Spirit Retreat, in the same section, were
+  *included*: all are women's guest houses, resorts or retreats on their own
+  land. Pagoda was included as a lesbian residential community.)
+
+Classified ads excluded, LC Mar/Apr 1986: guest houses and B&Bs (Blueberry
+Ridge, a Eugene B&B, a rental room in Hinton, WV); events (Sources retreat
+weekends, Campfest '86, the Southern Women's Music & Comedy Festival, a
+feminist girls' camp); "COASTAL SISTERS" (seeking a community); and land for
+sale (Spiral's bordering acreage, and J Haggard's Minnesota land, both noted
+on their communities).
 
 Printed under the same note, but *included*: Ozark Wimmin's Land Trust. It
 had land, and the land was dissolved ("The pieces of land wound up in legal
